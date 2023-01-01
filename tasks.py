@@ -2,7 +2,8 @@ import main
 import pyjokes
 
 L = main
-name = 'El'
+name1 = 'L'
+name2 = 'El'
 def joke():
     funny = pyjokes.get_joke()
     print(funny)
@@ -23,12 +24,12 @@ command = ""
 while True and "goodbye" not in command:
     command = L.listen()
     print("command was ", command)
-    if name in command:
+    if name1 in command or name2 in command:
     #having L tell me a joke
         if "joke" in command:
             joke()
         
-        if "prime directive" in command:
+        if "prime" in command and "directive" in command:
             prime_directive()
 
         if "purpose" in command:
